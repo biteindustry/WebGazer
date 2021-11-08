@@ -2,12 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="">
         <meta name="author" content="">
-        <!--<link rel="icon" href="../../favicon.ico">-->
 
         <title>WebGazer.js: Democratizing Webcam Eye Tracking on the Browser</title>
 
@@ -17,15 +14,13 @@
         <link rel="stylesheet" href="css/highlight/styles/default.css">
         <script src="css/highlight/highlight.pack.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
-
-		<link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
 
 
     <body data-spy="scroll" data-target="#navbar">
 
         <!-- Fixed navbar -->
-
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -39,7 +34,7 @@
                         <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#video">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#usage">Usage</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#support">Support</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#compatibility">Compatibility</a></li>
                         <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
                         <li class="nav-item"><a class="nav-link" href="#examples">Examples</a></li>
                         <li class="nav-item"><a class="nav-link" href="#publication">Publications</a></li>
@@ -51,11 +46,6 @@
         </nav>
 
         <div id="home" class="container pad" style="padding-top: 0px">
-            <a href="https://github.com/brownhci/WebGazer"><img style="position: absolute; top: 30; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub"
-               data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
-            <!-- Main
-            component for a primary marketing message or call
-            to action -->
             <div class="jumbotron">
                 <h1 class="text-center" style="margin-bottom:20px"> WebGazer.js </h1>
                 <h2 class="text-center" style="margin-bottom:0px"> Democratizing Webcam Eye Tracking on the Browser</h2>
@@ -74,7 +64,7 @@
                 <div class="row">
                     <div class="col-sm-7">
                         <div class="embed-responsive embed-responsive-16by9" align="center">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/NRLlRh2apA8" frameborder="0" allowfullscreen></iframe>
+                          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NRLlRh2apA8" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col-sm-5">
@@ -85,8 +75,13 @@
                             <p class="text-left padright" style="font-size:18px">Easy to integrate with a few lines of JavaScript</p>
                             <p class="text-left padright" style="font-size:18px">Swappable components for eye detection</p>
                             <p class="text-left padright" style="font-size:18px">Multiple gaze prediction models</p>
-                            <p class="text-left padright" style="font-size:18px">Continually supported and open source for 4+ years</p>
+                            <p class="text-left padright" style="font-size:18px">Continually supported and open source for 5+ years</p>
                         </div>
+                    </div>
+                </div>
+                <div class="row pt-4 text-center">
+                    <div class="col-sm-12">
+                        <h4>Want to be notified about updates? </h4><a class="btn btn-primary  my-2" href="https://docs.google.com/forms/d/e/1FAIpQLSeTCgnwF1gjrc1O8mfJ_5TmT_TLowFQ2DUhsollmqPG84pAFQ/viewform?usp=pp_url&entry.1299571007=WebGazer:+webcam+eyetracking&entry.1760653896=webgazer+frontpage" role="button">Subscribe</a>
                     </div>
                 </div>
             </div>
@@ -158,7 +153,6 @@ if (prediction) {
                             <li>ridge - a simple ridge regression model mapping pixels from the detected eyes to locations on the screen.</li>
                             <li>weightedRidge - a weight ridge regression model with newest user interactions contributing more to the model.</li>
                             <li>threadedRidge - a faster implementation of ridge regression that uses threads.</li>
-                            <!-- <li>linear - a basic simple linear regression that maps </li> -->
                         </ul>
                     </div>
                 </div>
@@ -188,8 +182,8 @@ prediction.y; //now always in the bounds of the viewport
 
 
         <hr class="featurette-divider">
-        <div id="support" class="container pad">
-            <h2 class="text-center">Support</h2>
+        <div id="compatibility" class="container pad">
+            <h2 class="text-center">Browser Compatibility</h2>
             <p class="text-left pad">
                 WebGazer.js uses:
                 <ul>
@@ -371,7 +365,7 @@ npm run build
                     <p>Websites that have featured WebGazer.js:</p>
                     <ul class="nobullets">
                         <li><a href="http://www.cio.com.au/article/601028/web-developers-meet-webgazer-software-turns-webcams-into-eye-trackers/">CIO</a></li>
-                        <li><a href="http://www.healthaim.com/exclusive-scientist-alexandra-papoutsaki-on-revolutionary-eye-tracking-technology-webgazer-js-for-using-computers-without-lifting-a-finger/58039">HEALTHAIM</a></li>
+                        <!--li><a href="http://www.healthaim.com/exclusive-scientist-alexandra-papoutsaki-on-revolutionary-eye-tracking-technology-webgazer-js-for-using-computers-without-lifting-a-finger/58039">HEALTHAIM</a></li-->
                         <li><a href="http://www.i-programmer.info/news/146-uiux/9786-webgazerjs-an-in-browser-eye-tracking-library.html">I Programmer</a></li>
                         <li><a href="https://news.brown.edu/articles/2016/06/eyetracker">News from Brown</a></li>
                         <li><a href="http://www.pcworld.com/article/3078712/application-development/web-developers-meet-webgazer-software-that-turns-webcams-into-eye-trackers.html">PCWorld</a></li>
@@ -385,7 +379,7 @@ npm run build
                 <p>Online discussions in:</p>
                 <ul class="nobullets">
                     <li><a href="https://news.ycombinator.com/item?id=11770273">Hacker News</a></li>
-                    <li><a href="https://www.reddit.com/r/programming/comments/4kyeww/webgazerjs_eye_tracking_library_using_the_webcam/">Reddit Programming</a></li>
+                    <li><a href="https://www.reddit.com/r/programming/comments/4kyeww/webgazerjs_eye_tracking_library_using_the_webcam/">Reddit /r/programming</a></li>
                     <li><a href="https://twitter.com/search?f=tweets&vertical=default&q=webgazer">Twitter</a></li>
                 </div>
 
@@ -415,7 +409,7 @@ npm run build
                 </div>
                 <div class="col-lg-2">
                     <img class="rounded-circle mx-auto d-block" src="media/people/james.jpg" alt="James Tompkin" height="140">
-                    <h4 class="text-center"><a href="http://jamestompkin.com/">James Tompkin</a></h4>
+                    <h4 class="text-center"><a href="https://jamestompkin.com/">James Tompkin</a></h4>
                 </div>
                 <div class="col-lg-2">
                     <img class="rounded-circle mx-auto d-block" src="media/people/jeff.jpg" alt="Jeff Huang" height="140">
@@ -426,19 +420,19 @@ npm run build
             	<div class="col-lg-6">
 	                <h3>Other Contributors</h3>
 	                <ul style="margin-top: 20px" class="nobullets">
-	                    <li><a href="http://cs.brown.edu/~nediyana">Nediyana Daskalova</a></li>
-	                    <li><a href="http://www.cc.gatech.edu/~hays/">James Hays</a></li>
+	                    <li><a href="https://nediyana.github.io/">Nediyana Daskalova</a></li>
+	                    <li><a href="https://www.cc.gatech.edu/~hays/">James Hays</a></li>
 	                    <li>Yuze He</li>
 	                    <li>James Laskey</li>
-	                    <li><a href="http://www.cc.gatech.edu/~psangklo/">Patsorn Sangkloy</a></li>
-	                    <li><a href="https://www.linkedin.com/in/elizabeth-stevenson-9b47a7125/">Elizabeth Stevenson</a></li>
+	                    <li><a href="https://www.cc.gatech.edu/~psangklo/">Patsorn Sangkloy</a></li>
+	                    <li>Elizabeth Stevenson</li>
 	                    <li><a href="https://cs.brown.edu/~ptunnell/">Preston Tunnell Wilson</a></li>
 	                    <li>Jack Wong</li>
 	                </ul>
             	</div>
             	<div class="col-lg-6">
 	                <h3 class="pad">Acknowledgements</h3>
-	                <p>Webgazer is developed based on the research originally done at Brown University, with recent work at Pomona College. The work of the calibration example file was developed in the context of a course project with the aim to improve the feedback of WebGazer, proposed by Dr. Gerald Weber and his team Dr. Clemens Zeidler and Kai-Cheung Leung.
+	                <p>Webgazer is based on the research originally done at Brown University, with recent work and maintenance jointly between Pomona College and Brown University. The work of the calibration example file was developed in the context of a course project with the aim to improve the feedback of WebGazer, proposed by Dr. Gerald Weber and his team Dr. Clemens Zeidler and Kai-Cheung Leung.
 	                  <br /><br />
 	                  This research is supported by NSF grants IIS-1464061, IIS-1552663, a Seed Award from the Center for Vision Research at Brown University, and the Brown University Salomon Award.
 	                </p>
@@ -448,7 +442,7 @@ npm run build
         <hr class="featurette-divider">
         <div id="license" class="container pad">
             <h2 class="text-center">License</h2>
-            <p class="text-center">Copyright (C) 2021 <a href="http://hci.cs.brown.edu">Brown HCI Group</a><br>
+            <p class="text-center">Copyright (C) 2021 <a href="https://hci.brown.edu">Brown HCI Group</a><br>
             Licensed under <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>.
             </p>
 
